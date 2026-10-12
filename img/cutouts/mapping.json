@@ -1,0 +1,68 @@
+[
+  {
+    "tier": 1,
+    "file": "01-face.webp",
+    "src": "7d13d489fbb13ac20436433d7bf790b1.jpg",
+    "px": 194
+  },
+  {
+    "tier": 2,
+    "file": "02-face.webp",
+    "src": "c8950106c90720ead93f2019a8a4c118.jpg",
+    "px": 483
+  },
+  {
+    "tier": 3,
+    "file": "03-face.webp",
+    "src": "b0e52047b70589496748ada1ee631971.jpg",
+    "px": 508
+  },
+  {
+    "tier": 4,
+    "file": "04-face.webp",
+    "src": "207a3d2ef0dd4bdd34ad4ef7d9fe426b.jpg",
+    "px": 512
+  },
+  {
+    "tier": 5,
+    "file": "05-face.webp",
+    "src": "b2d288995f60986dc05eda64602c55c2.jpg",
+    "px": 195
+  },
+  {
+    "tier": 6,
+    "file": "06-face.webp",
+    "src": "1dda02b48645cda53a46381d69c0ffc5.jpg",
+    "px": 232
+  },
+  {
+    "tier": 7,
+    "file": "07-face.webp",
+    "src": "d65fcfda68099c437de082cdc9e13c0b.jpg",
+    "px": 530
+  },
+  {
+    "tier": 8,
+    "file": "08-face.webp",
+    "src": "c8989496dcb23e81d707176591437769.jpg",
+    "px": 691
+  },
+  {
+    "tier": 9,
+    "file": "09-face.webp",
+    "src": "683d6ab333a034a5a207637fecc9e038.jpg",
+    "px": 833
+  },
+  {
+    "tier": 10,
+    "file": "10-face.webp",
+    "src": "6e4553a31b5ec1ccd0e46a8912d6af54.jpg",
+    "px": 435
+  },
+  {
+    "tier": 11,
+    "file": "11-face.webp",
+    "src": "9a9337bbeddeb0f6cd1a94a5dc87fbcd.jpg",
+    "px": 1332
+  }
+]
