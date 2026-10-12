@@ -37,12 +37,12 @@
   const MERGE_PAD = 0.8;     // 合成判定的接触容差（px）
 
   /* —— Q 弹手感 —— */
-  const RESTITUTION      = 0.38;  // 球与球之间的弹性
-  const WALL_RESTITUTION = 0.45;  // 撞墙 / 撞地面的弹性
+  const RESTITUTION      = 0.25;  // 球与球之间的弹性（原 0.38，减 1/3）
+  const WALL_RESTITUTION = 0.30;  // 撞墙 / 撞地面的弹性（原 0.45，减 1/3）
   const REST_THRESHOLD   = 55;    // 撞击速度低于此值不反弹（保证堆叠稳、不抖）
   const FRICTION         = 0.955; // 接触时的切向摩擦（每个子步）
   const SQUASH_DECAY     = 9;     // 挤压回弹速度
-  const SQUASH_MAX       = 0.30;  // 最大挤压变形
+  const SQUASH_MAX       = 0.20;  // 最大挤压变形（原 0.30，减 1/3）
 
   /* 水果链：索引越大越大
      file : assets/fruits/ 下的贴图（由 tools/normalize_assets.py 统一生成）
@@ -530,7 +530,7 @@
 
   /* 撞击挤压：沿撞击法线压扁、垂直方向拉伸，做出果冻感 */
   function squash(b, nx, ny, speed) {
-    const k = Math.min(SQUASH_MAX, speed / 1500);
+    const k = Math.min(SQUASH_MAX, speed / 2250);  // 原 /1500，变形量减 1/3
     if (k <= b.sq) return;
     b.sq = k;
     b.sqA = Math.atan2(ny, nx);
@@ -1007,7 +1007,7 @@
       let scale = 1;
       if (b.popAt) {
         const t = (now - b.popAt) / 220;
-        if (t < 1) scale = 1 + 0.28 * (1 - t);
+        if (t < 1) scale = 1 + 0.19 * (1 - t);  // 出生弹入幅度（原 0.28，减 1/3）
         else b.popAt = 0;
       }
       const shape = b.sq > 0.004 ? { a: b.sqA, k: b.sq } : null;
